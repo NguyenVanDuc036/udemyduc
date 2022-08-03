@@ -1,0 +1,74 @@
+.myCover{
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    .cover__content{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        width: 28rem;
+        height: auto;
+        h1{
+            @include text($color-white-0, $fs-4, $fw-bold-0)
+            // margin-bottom : 1rem;
+        }
+        p{
+            @include text($color-white-0, $fs-3, $fw-bold-0)
+            // width: 65%;
+        }
+        .input{
+            .form-control{
+                font-size: 18px;
+                padding: 25px 15px;
+                border: none;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            .input-group-prepend{
+                .input-group-text{
+                    padding: 0 17px;
+                    background: $color-white-0;
+                    border: none;
+                    color: $color-red-0 ;
+                    &:hover{
+                        background:$color-red-0;
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+    @include respon-to('large'){
+        .cover__content{
+            left: 13%;
+            width: 22rem;
+        }
+    }
+}
+@include respon-to('medium'){
+    .myCover{
+        height: 400px;
+        .cover__content{
+            left: 15% !important;
+            width: 19rem !important;   
+            h1{
+                font-size: 25px !important;
+            }
+            p{
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+
+@include respon-to('small'){
+    .myCover{
+        height: 300px !important;
+    }
+}
+
+

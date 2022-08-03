@@ -1,0 +1,10 @@
+.btn--white{
+    @include button($color-black-light,$color-black-light,$color-white-0,$fw-bold-0, $color-gray-1);
+    border: 1px solid $color-black-light !important;
+    padding-bottom: 10px !important;
+}
+.btn--red{
+    @include button($color-white-0,$color-red-0,$color-red-0,$fw-bold-0, $color-red-1);
+    color: $color-white-0 !important;
+    padding-bottom: 10px !important;
+}

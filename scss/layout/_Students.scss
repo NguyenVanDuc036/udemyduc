@@ -1,0 +1,142 @@
+.Students{
+    margin-bottom: 2rem;
+    .Students__content{
+        h5{
+            color: #505763;
+            font-weight: 300;
+            padding: 0.5rem 0;
+        }
+        width: 90%;
+        margin: 0 auto;
+        .myStudent{
+            .owl-nav{
+                position: absolute;
+                top: 30%;
+                left: -2%;
+                width: 104% !important;
+            button:nth-child(1){
+                float: left;
+                background: white;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;               
+                box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20,23,28,0.1  );       
+                transition: all 0.8s;          
+                &:hover span{
+                    color: #007791 !important;
+                }
+                &:focus{
+                    outline: 0px !important;
+                    outline: 0px auto !important;
+                }
+                &:hover{
+                    box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+                }
+            }
+            button:nth-child(2){
+                float: right;
+                background: white;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20,23,28,0.1  );
+                transition: all 0.8s;
+                &:hover span{
+                    color: #007791 !important;
+                }
+                &:focus{
+                    outline: 0px !important;
+                    outline:0px auto !important;
+                }
+                &:hover{
+                    box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+                }
+            }
+                    span{
+                        font-size: 50px;
+                        line-height: 25px;
+                        color: #007791 !important;
+                    }
+            }
+            .item{
+                &:hover .card{
+                    // background-color: black;
+                    box-shadow: 0 2px 8px 2px rgba(20, 23 ,28 , 0.15);
+                }
+                &:hover .overlay1{
+                    opacity: 1;
+                }
+                .card{
+                    
+                    &:hover .overlay1{
+                        opacity: 1;
+                    }
+                    position: relative;
+                    .card-body{
+                        h4{
+                            font-size: 15px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                        .icon{
+                            display: flex;
+                            i{
+                                font-size: 10px;
+                                color: #f4c150;
+                                margin-right: 3px;
+                            }
+                            span{
+                                font-size: 15px;
+                            }
+                        }
+                        .footer{
+                            text-align: right;
+                            span{
+                                font-size: 15px;
+                                font-weight: normal;
+                                text-decoration: line-through;
+                            }
+                            h5{
+                                font-size: 20px;
+                                display: inline;
+                                color: black;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .overlay{
+                    p{
+                        background-color: #f4c150;
+                        font-size: 9px;
+                        width: 31% !important;
+                        padding: 1px 5px;
+                        font-weight: 500;
+                        position: absolute;
+                        top:5%; 
+                        &::after{
+                            content: '';
+                            height: 9px;
+                            width: 11px;
+                            background-color: #f4c150;
+                            transform: rotate(45deg);
+                            display: block;
+                            position: absolute;
+                            top: 14%;
+                            right: -7%;
+                        }
+                    }
+                }
+                .overlay1{
+                    width: 98%;
+                    height: 42%;
+                    position: absolute;
+                    top: 0;
+                    background-color: #00000052;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

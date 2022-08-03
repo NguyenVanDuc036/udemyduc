@@ -1,0 +1,30 @@
+$color-white-0: #fff    ;
+$color-black-0: black;
+$color-black-1: #29303b;
+$color-red-0: #dc3545;
+$color-red-1: #521822;
+$color-gray-1: rgba(20,23,28,.05);
+$color-gray-2:#505763;
+$color-gray-3 : #cacbcc;
+$color-gray-4 : #686f7a;
+$color-gray-5 : #14171c;
+$color-black-light : #505763;
+$color-blue-white : #007791;
+
+
+$fs-0 : 15px;
+$fs-1: 13px;
+$fs-3: 20px;
+$fs-4: 40px;
+
+$fw-normal : normal;
+$fw-bold-0 : 600;
+
+$pd-1:10px;
+
+$breakpoints:(
+    'extra-large' : 1200px,
+    'large': 992px,
+    'medium' : 768px,
+    'small' :576px,
+)

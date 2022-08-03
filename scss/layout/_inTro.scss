@@ -1,0 +1,46 @@
+#myIntro{
+    background: linear-gradient(-45deg,#EC5252 0%,#6E1A52 100%);
+    .container {
+
+        max-width: 90%;
+        .myIntro__item{
+            color: white;
+            margin-top: 1.5rem;
+            align-self: center;
+            i{
+                font-size: 40px;
+                margin-right: 20px;
+            }
+            h3{
+                font-size: 15px;
+                line-height: 8px;
+            }
+        }
+        .myIntro__item:nth-child(2){
+            justify-content: center;
+        }
+        .myIntro__item:nth-child(3){
+            justify-content: flex-end;
+        }
+    }
+    
+    @include respon-to('extra-large'){
+        .myIntro__item{
+            i{
+                display: none;
+            }
+            h3{
+                text-align: center;
+            }
+        }
+    
+    }
+}
+
+@include respon-to('medium'){
+    #myIntro{
+        display: none !important;
+    }
+}
+
+

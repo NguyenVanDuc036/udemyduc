@@ -1,0 +1,1112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.43;
+  color: #29303b;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.btn--white {
+  background-color: #fff !important;
+  color: #505763 !important;
+  font-weight: 600 !important;
+  border: 1px solid #505763;
+  border: 1px solid #505763 !important;
+  padding-bottom: 10px !important;
+}
+
+.btn--white:hover {
+  background-color: rgba(20, 23, 28, 0.05) !important;
+}
+
+.btn--red {
+  background-color: #dc3545 !important;
+  color: #dc3545 !important;
+  font-weight: 600 !important;
+  border: 1px solid #fff;
+  color: #fff !important;
+  padding-bottom: 10px !important;
+}
+
+.btn--red:hover {
+  background-color: #521822 !important;
+}
+
+.head {
+  width: 100%;
+  height: 9px;
+  background: linear-gradient(90deg, #645b53 0%, #eb5252 18.23%, #f78f2f 34.37%, #f4c151 48.96%, #52bb76 66.15%, #26a5d7 82.29%, #e069b7 100%) !important;
+}
+
+.myNavBar {
+  border-bottom: 1px solid #cacbcc;
+}
+
+.myNavBar .navbar-brand {
+  flex-grow: 1;
+}
+
+.myNavBar .navbar-brand img {
+  width: 110px;
+}
+
+.myNavBar .Categories {
+  flex-grow: 1;
+  font-size: 13px;
+  font-weight: normal;
+  color: #505763;
+  align-self: center;
+}
+
+.myNavBar .input-search {
+  flex-grow: 5;
+}
+
+.myNavBar .input-search .form-control {
+  background-color: rgba(20, 23, 28, 0.05);
+  color: black;
+  border: none;
+  padding: 22px;
+}
+
+.myNavBar .input-search .form-control:focus {
+  box-shadow: none;
+  background-color: #fff;
+  border-top: 1px solid #cacbcc;
+  border-bottom: 1px solid #cacbcc;
+  border-left: 1px solid #cacbcc;
+  transition: none;
+}
+
+.myNavBar .input-search .form-control:focus + .input-group-prepend .input-group-text {
+  background-color: #fff;
+  border-top: 1px solid #cacbcc;
+  border-bottom: 1px solid #cacbcc;
+  border-right: 1px solid #cacbcc;
+}
+
+.myNavBar .input-search .form-control:focus + .myNavBar .input-search .form-control:hover .input-group-prepend .input-group-text {
+  background-color: #dc3545;
+  color: white;
+}
+
+.myNavBar .input-search .input-group-prepend .input-group-text {
+  background-color: rgba(20, 23, 28, 0.05);
+  color: #dc3545;
+  border: none;
+}
+
+.myNavBar .input-search .input-group-prepend:hover .input-group-text {
+  background-color: #dc3545;
+  color: white;
+}
+
+.myNavBar .navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.myNavBar .navbar-nav .nav-item {
+  padding: 3px 3px;
+}
+
+.myNavBar .navbar-nav .nav-item .nav-link {
+  font-size: 13px;
+  font-weight: normal;
+  color: #505763;
+}
+
+.myNavBar .navbar-nav .nav-item:hover {
+  background-color: rgba(20, 23, 28, 0.05);
+}
+
+.myNavBar .navbar-nav .item4:hover {
+  background-color: #fff;
+}
+
+.myNavBar .navbar-nav .nav-item:nth-child(3) {
+  align-self: center;
+  border-radius: 50%;
+  padding: 11px 14px;
+}
+
+.myNavBar .navbar-nav .nav-item:nth-child(4) {
+  align-self: center;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .myNavBar .business, .myNavBar .teach {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myNavBar .Categories, .myNavBar .input-search {
+    display: none !important;
+  }
+}
+
+header {
+  border: 8px solid linear-gradient(90deg, #645b53 0%, #eb5252 18.23%, #f78f2f 34.37%, #f4c151 48.96%, #52bb76 66.15%, #26a5d7 82.29%, #e069b7 100%);
+}
+
+.myCover {
+  background-image: url(../images/cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.myCover .cover__content {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 28rem;
+  height: auto;
+}
+
+.myCover .cover__content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.myCover .cover__content p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.myCover .cover__content .input .form-control {
+  font-size: 18px;
+  padding: 25px 15px;
+  border: none;
+}
+
+.myCover .cover__content .input .form-control:focus {
+  box-shadow: none;
+}
+
+.myCover .cover__content .input .input-group-prepend .input-group-text {
+  padding: 0 17px;
+  background: #fff;
+  border: none;
+  color: #dc3545;
+}
+
+.myCover .cover__content .input .input-group-prepend .input-group-text:hover {
+  background: #dc3545;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .myCover .cover__content {
+    left: 13%;
+    width: 22rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .myCover {
+    height: 400px;
+  }
+  .myCover .cover__content {
+    left: 15% !important;
+    width: 19rem !important;
+  }
+  .myCover .cover__content h1 {
+    font-size: 25px !important;
+  }
+  .myCover .cover__content p {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .myCover {
+    height: 300px !important;
+  }
+}
+
+#myIntro {
+  background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%);
+}
+
+#myIntro .container {
+  max-width: 90%;
+}
+
+#myIntro .container .myIntro__item {
+  color: white;
+  margin-top: 1.5rem;
+  align-self: center;
+}
+
+#myIntro .container .myIntro__item i {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+#myIntro .container .myIntro__item h3 {
+  font-size: 15px;
+  line-height: 8px;
+}
+
+#myIntro .container .myIntro__item:nth-child(2) {
+  justify-content: center;
+}
+
+#myIntro .container .myIntro__item:nth-child(3) {
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+  #myIntro .myIntro__item i {
+    display: none;
+  }
+  #myIntro .myIntro__item h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #myIntro {
+    display: none !important;
+  }
+}
+
+#Course {
+  margin-top: 1rem;
+}
+
+#Course .container {
+  padding: 2rem 0;
+  max-width: 95%;
+}
+
+#Course .container .row .col-md-4 {
+  position: relative;
+  background: #f7f8fa;
+  height: 354px;
+  padding-bottom: 1rem;
+}
+
+#Course .container .row .col-md-4 .text {
+  padding-left: 2rem;
+  position: absolute;
+  position: absolute;
+  top: 40%;
+}
+
+#Course .container .row .col-md-4 .text h2 {
+  font-size: 18px;
+  font-weight: 650;
+}
+
+#Course .container .row .col-md-4 .text p {
+  color: #29303b;
+  width: 90%;
+}
+
+#Course .container .row .col-md-8 {
+  padding-bottom: 1rem;
+}
+
+#Course .container .row .col-md-8 .myTab {
+  width: 96%;
+}
+
+#Course .container .row .col-md-8 .myTab .nav-tabs .nav-item {
+  color: #14171c;
+}
+
+#Course .container .row .col-md-8 .myTab .nav-tabs .nav-item .active {
+  border: none !important;
+  border-bottom: 5px solid #007791 !important;
+}
+
+#Course .container .row .col-md-8 .myTab .nav-tabs .nav-item .nav-link {
+  border: none;
+  color: #14171c;
+}
+
+#Course .container .row .col-md-8 .myTab .nav-tabs .nav-item .nav-link:hover {
+  border: none;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content {
+  width: 105% !important;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane {
+  margin: 15px 0 !important;
+  padding: 0 !important;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav {
+  position: absolute;
+  top: 30%;
+  left: -3%;
+  width: 104% !important;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav button:nth-child(1) {
+  float: left;
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20, 23, 28, 0.1);
+  transition: all 0.8s;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav button:nth-child(1):hover span {
+  color: #007791 !important;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav button:nth-child(1):focus {
+  outline: 0px !important;
+  outline: 0px auto !important;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav button:nth-child(1):hover {
+  box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav button:nth-child(2) {
+  float: right;
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20, 23, 28, 0.1);
+  transition: all 0.8s;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav button:nth-child(2):hover span {
+  color: #007791 !important;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav button:nth-child(2):focus {
+  outline: 0px !important;
+  outline: 0px auto !important;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav button:nth-child(2):hover {
+  box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .owl-nav span {
+  font-size: 50px;
+  line-height: 25px;
+  color: #007791 !important;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item:hover .card {
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item:hover .overlay1 {
+  opacity: 1;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20, 23, 28, 0.1);
+  position: relative;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card:hover .overlay1 {
+  opacity: 1;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card .card-body h4 {
+  font-size: 15px;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card .card-body p {
+  font-size: 15px;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card .card-body .icon {
+  display: flex;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card .card-body .icon i {
+  font-size: 10px;
+  color: #f4c150;
+  margin-right: 3px;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card .card-body .icon span {
+  font-size: 15px;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card .card-body .footer {
+  text-align: right;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card .card-body .footer span {
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .card .card-body .footer h5 {
+  font-size: 18px;
+  display: inline;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .overlay p {
+  background-color: #f4c150;
+  font-size: 9px;
+  width: 31% !important;
+  padding: 1px 5px;
+  font-weight: 500;
+  position: absolute;
+  top: 5%;
+  z-index: 5;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .overlay p::after {
+  content: '';
+  height: 9px;
+  width: 11px;
+  background-color: #f4c150;
+  transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  top: 14%;
+  right: -7%;
+  z-index: 5;
+}
+
+#Course .container .row .col-md-8 .myTab .tab-content .tab-pane .myCarousel .item .overlay1 {
+  width: 100%;
+  height: 42%;
+  position: absolute;
+  top: 0;
+  background-color: #00000052;
+  opacity: 0;
+  transition: all 0.8s;
+  z-index: 5;
+}
+
+@media screen and (max-width: 1200px) {
+  #Course .Course__content .text {
+    display: none;
+  }
+}
+
+.Intro2 {
+  background: #f2f3f5;
+}
+
+.Intro2 .Intro2__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  margin: 0 auto;
+  grid-gap: 20px;
+  padding: 25px 0px;
+}
+
+.Intro2 .Intro2__content .item {
+  background-color: white;
+  padding: 22px 30px;
+}
+
+.Intro2 .Intro2__content .item .content {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.Intro2 .Intro2__content .item .content .img img {
+  margin-right: 2rem;
+}
+
+.Intro2 .Intro2__content .item .content .text h3 {
+  font-size: 15px;
+}
+
+.Intro2 .Intro2__content .item .content .text p {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .Intro2 .Intro2__content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .Intro2 .Intro2__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.Students {
+  margin-bottom: 2rem;
+}
+
+.Students .Students__content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Students .Students__content h5 {
+  color: #505763;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.Students .Students__content .myStudent .owl-nav {
+  position: absolute;
+  top: 30%;
+  left: -2%;
+  width: 104% !important;
+}
+
+.Students .Students__content .myStudent .owl-nav button:nth-child(1) {
+  float: left;
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20, 23, 28, 0.1);
+  transition: all 0.8s;
+}
+
+.Students .Students__content .myStudent .owl-nav button:nth-child(1):hover span {
+  color: #007791 !important;
+}
+
+.Students .Students__content .myStudent .owl-nav button:nth-child(1):focus {
+  outline: 0px !important;
+  outline: 0px auto !important;
+}
+
+.Students .Students__content .myStudent .owl-nav button:nth-child(1):hover {
+  box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+}
+
+.Students .Students__content .myStudent .owl-nav button:nth-child(2) {
+  float: right;
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20, 23, 28, 0.1);
+  transition: all 0.8s;
+}
+
+.Students .Students__content .myStudent .owl-nav button:nth-child(2):hover span {
+  color: #007791 !important;
+}
+
+.Students .Students__content .myStudent .owl-nav button:nth-child(2):focus {
+  outline: 0px !important;
+  outline: 0px auto !important;
+}
+
+.Students .Students__content .myStudent .owl-nav button:nth-child(2):hover {
+  box-shadow: rgba(20, 23, 28, 0.15) 0px 2px 8px 2px;
+}
+
+.Students .Students__content .myStudent .owl-nav span {
+  font-size: 50px;
+  line-height: 25px;
+  color: #007791 !important;
+}
+
+.Students .Students__content .myStudent .item:hover .card {
+  box-shadow: 0 2px 8px 2px rgba(20, 23, 28, 0.15);
+}
+
+.Students .Students__content .myStudent .item:hover .overlay1 {
+  opacity: 1;
+}
+
+.Students .Students__content .myStudent .item .card {
+  position: relative;
+}
+
+.Students .Students__content .myStudent .item .card:hover .overlay1 {
+  opacity: 1;
+}
+
+.Students .Students__content .myStudent .item .card .card-body h4 {
+  font-size: 15px;
+}
+
+.Students .Students__content .myStudent .item .card .card-body p {
+  font-size: 15px;
+}
+
+.Students .Students__content .myStudent .item .card .card-body .icon {
+  display: flex;
+}
+
+.Students .Students__content .myStudent .item .card .card-body .icon i {
+  font-size: 10px;
+  color: #f4c150;
+  margin-right: 3px;
+}
+
+.Students .Students__content .myStudent .item .card .card-body .icon span {
+  font-size: 15px;
+}
+
+.Students .Students__content .myStudent .item .card .card-body .footer {
+  text-align: right;
+}
+
+.Students .Students__content .myStudent .item .card .card-body .footer span {
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+.Students .Students__content .myStudent .item .card .card-body .footer h5 {
+  font-size: 20px;
+  display: inline;
+  color: black;
+  font-weight: 600;
+}
+
+.Students .Students__content .myStudent .item .overlay p {
+  background-color: #f4c150;
+  font-size: 9px;
+  width: 31% !important;
+  padding: 1px 5px;
+  font-weight: 500;
+  position: absolute;
+  top: 5%;
+}
+
+.Students .Students__content .myStudent .item .overlay p::after {
+  content: '';
+  height: 9px;
+  width: 11px;
+  background-color: #f4c150;
+  transform: rotate(45deg);
+  display: block;
+  position: absolute;
+  top: 14%;
+  right: -7%;
+}
+
+.Students .Students__content .myStudent .item .overlay1 {
+  width: 98%;
+  height: 42%;
+  position: absolute;
+  top: 0;
+  background-color: #00000052;
+  opacity: 0;
+}
+
+.personalized {
+  color: white;
+}
+
+.personalized .banner1 {
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%);
+}
+
+.personalized .banner2 {
+  padding: 2rem 0;
+  background-color: #29303b;
+  font-size: 30px;
+}
+
+.personalized .banner2 .content1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.personalized .banner2 .content2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  font-size: 20px;
+}
+
+.personalized .banner2 .content2 div {
+  align-self: center;
+}
+
+.personalized .banner2 .content2 i {
+  font-size: 30px;
+}
+
+.personalized .banner2 .content2 div:nth-child(2) h1 {
+  font-size: 20px;
+}
+
+.personalized .banner2 .content2 div:nth-child(2) p {
+  font-size: 15px;
+}
+
+.personalized .banner2 .content2 div:nth-child(2) button {
+  border: none;
+  background-color: #ec5252;
+  border: 1px solid transparent;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.personalized .banner2 .content2 div:nth-child(2) button:focus {
+  outline: none !important;
+}
+
+.personalized .banner2 .content2 div:nth-child(2) button:hover {
+  background-color: #992337;
+}
+
+.personalized .banner2 .content3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .personalized i {
+    display: none !important;
+  }
+}
+
+.Topcategories {
+  margin: 3rem 0;
+  background: white;
+}
+
+.Topcategories .Topcategories__content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Topcategories .Topcategories__content h1 {
+  font-size: 25px;
+  font-weight: 650;
+  padding: 1rem 0;
+}
+
+.Topcategories .Topcategories__content .table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.Topcategories .Topcategories__content .table .item {
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20, 23, 28, 0.1);
+  padding: 18px 0px;
+  width: 100%;
+  background-color: white;
+  transition: all 0.8s;
+}
+
+.Topcategories .Topcategories__content .table .item:hover {
+  box-shadow: 0 0 10px 4px rgba(20, 23, 28, 0.1), 0 3px 1px rgba(20, 23, 28, 0.1);
+}
+
+.Topcategories .Topcategories__content .table .item i {
+  font-size: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.Topcategories .Topcategories__content .table .item p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Topcategories .table {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Topcategories .table {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Topcategories .table {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+.Whatour {
+  padding-bottom: 3rem;
+  background: #f2f3f5;
+}
+
+.Whatour .Whatour__content .partners p {
+  color: #686f7a;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.Whatour .Whatour__content .partners .partners-logo {
+  justify-content: center;
+}
+
+.Whatour .Whatour__content .partners .partners-logo .item {
+  margin: 0 32px 8px;
+  text-align: center;
+  align-self: center;
+}
+
+.Whatour .Whatour__content .partners .partners-logo .item img {
+  width: 140px;
+}
+
+.Whatour .Whatour__content .partners .partners-logo .item1 img {
+  width: 40px;
+}
+
+.Whatour .Whatour__content .partners .partners-logo .item2 img {
+  width: 110px;
+}
+
+.Whatour .Whatour__content .non-student {
+  margin-top: 5rem;
+}
+
+.Whatour .Whatour__content .non-student .non-student__content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Whatour .Whatour__content .non-student .non-student__content .bo {
+  border-right: 1px solid #dedfe0;
+}
+
+.Whatour .Whatour__content .non-student .non-student__content h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Whatour .Whatour__content .non-student .non-student__content p {
+  font-size: 17px;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.Whatour .Whatour__content .non-student .non-student__content button {
+  color: #fff;
+  background-color: #ec5252;
+  border-color: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 7px 20px;
+  border-radius: 4px;
+}
+
+.Whatour .Whatour__content .non-student .non-student__content button:hover {
+  background-color: #992337;
+}
+
+.Whatour .Whatour__content .myClass {
+  padding: 2rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.Whatour .Whatour__content .myClass .item {
+  background-color: white;
+  border-radius: 5px;
+  width: 97% !important;
+}
+
+.Whatour .Whatour__content .myClass .item:hover {
+  box-shadow: 0 1px 3px 0 rgba(20, 23, 28, 0.15);
+}
+
+.Whatour .Whatour__content .myClass .item .content {
+  padding: 25px 40px;
+}
+
+.Whatour .Whatour__content .myClass .item .content .info {
+  margin-bottom: 1.5rem;
+}
+
+.Whatour .Whatour__content .myClass .item .content .info img {
+  width: 17%;
+  border-radius: 50%;
+  display: inline;
+}
+
+.Whatour .Whatour__content .myClass .item .content p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+.Whatour .Whatour__content .myClass .slick-prev {
+  z-index: 3;
+}
+
+.Whatour .Whatour__content .myClass .slick-prev::before {
+  font-size: 40px;
+  z-index: 3;
+  color: gray;
+}
+
+.Whatour .Whatour__content .myClass .slick-next {
+  right: 11px !important;
+  z-index: 3;
+}
+
+.Whatour .Whatour__content .myClass .slick-next::before {
+  font-size: 40px;
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  .Whatour .non-student__content {
+    width: 100% !important;
+  }
+  .Whatour .non-student__content p {
+    width: 100% !important;
+  }
+  .Whatour .non-student__content .bo {
+    border-right: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .Whatour .partners-logo {
+    flex-wrap: wrap;
+  }
+  .Whatour .partners-logo .item {
+    margin: 0 16px 8px !important;
+  }
+}
+
+footer {
+  border-top: 1px solid #dedfe0;
+  border-bottom: 7px solid #ec5252;
+}
+
+footer .footer__content .row {
+  padding: 2rem 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer .footer__content .dropup button {
+  color: #686f7a;
+  background-color: #fff;
+  border: 1px solid #686f7a;
+  font-weight: 700;
+  padding: 8px 30px;
+}
+
+footer .footer__content .dropup button i {
+  margin-right: 1rem;
+}
+
+footer .footer__content .dropup button:focus {
+  outline: none;
+}
+
+footer .footer__content .col-3 ul {
+  list-style: none;
+}
+
+footer .footer__content .col-3 ul li a {
+  color: #007791;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+
+footer .footer__content .col-3 ul li a:hover {
+  color: #003845;
+  text-decoration: none;
+}
+
+footer .footer__content .col-3 ul li a h4 {
+  font-size: 15px;
+  color: #007791;
+}
+
+footer .footer__content .col-3 ul li a p {
+  font-size: 15px;
+}
+
+footer .footer__content .footer__bottom {
+  border-top: 1px solid  #dedfe0;
+}
+
+footer .footer__content .footer__bottom .row img {
+  width: 20%;
+  margin-right: 1rem;
+}
+
+footer .footer__content .footer__bottom .row span {
+  color: #686f7a;
+}
+
+footer .footer__content .footer__bottom .row .text {
+  text-align: right;
+}
+
+footer .footer__content .footer__bottom .row ul {
+  list-style: none;
+}
+
+footer .footer__content .footer__bottom .row ul li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+footer .footer__content .footer__bottom .row ul li a {
+  color: #007791;
+}
+
+footer .footer__content .footer__bottom .row ul li a:hover {
+  color: #003845;
+  text-decoration: none;
+}
+
+footer .footer__content .footer__bottom .row ul li a p {
+  display: inline;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer__content .row1 {
+    display: none;
+  }
+  footer .footer__content .footer__bottom .footer__bottom__content {
+    height: 7rem !important;
+  }
+  footer .footer__content .footer__bottom .footer__bottom__content .text {
+    text-align: left !important;
+  }
+}
+
+.Whatour__content > .owl-nav {
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
